@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="expense.css">
+</head>
+
+<body>
+    <div class="container block">
+        <div class="row">
+            <h1>EXPENSE TRACKER</h1>
+        </div>
+        <!-- <div class="row salary">
+            <input type="number" placeholder="Enter Your Month Salary">
+            <button>submit</button>
+        </div> -->
+        <div class="row">
+            <button id="add" onclick="call()">ADD New Expense</button>
+            <button id="view" onclick="view()">View All Expense</button>
+        </div>
+        <div class="row " id="revoke">
+            <input type="text" id="category" placeholder="Category" /><br />
+            <!-- <select id="category" >
+                <option value="" disabled>Select Category</option>
+                <option value="Rent">Rent</option>
+                <option value="Food">Food</option>
+                <option value="Fuel">Fuel</option>
+                <option value="Fee">Fee</option>
+                <option value="Loan">Loan</option>
+                <option value="Emi">EMI</option>
+                <option value="Entertainment">Entertainment</option>
+            </select><br/> -->
+            <input type="number" id="amount" placeholder="Amount (in Rs)" /><br />
+            <input type="date" id="date" placeholder="Date" /><br />
+            <button id="submit1" onclick="valid() && addexpense() ">Submit</button>
+            
+            <p id="errors"></p>
+
+        </div>
+    </div>
+    <!-- <div id="edit">
+        <input type="text " id="categoryedit" ><br/>
+        <input type="number " id="amountedit" ><br/>
+        <input type="text " id="dateedit" ><br/>
+        <button id="submit" onclick="change() ">Submit</button>
+
+    </div> -->
+        <div class="container tablecontainer">
+            <table id="results"></table>
+
+        </div>
+        <script src="expense.js"></script>
+</body>
+
+</html>

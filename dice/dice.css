@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+canvas
+{
+    background-color: aqua;
+    border-radius: 30%;
+}
+h1,p{
+    text-align: center;
+}
